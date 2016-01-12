@@ -1,0 +1,94 @@
+/* 背景を2色にするために装飾 */
+body{
+  margin:               0;
+  padding:              0;
+  font-size :           100%;
+  background-color:     #EAD9FF;
+  background-image:     url(../BackDesign/TitleBackImage.jpg);  /* 300x1の緑の画像へのパス */
+  background-position:  left top;                               /* 左上に配置 */
+  background-repeat:    repeat-x;                               /* 縦にのみリピート */
+  text-align:           top;
+  vertical-align:       top;
+  background-size:      20000px;
+}
+
+h2#Title {
+  color:                White;
+}
+
+.MainButton {
+  background-color:     #5D99FF;
+  color:                #F3FFD8;
+}
+.MainButton:hover {
+  background-color:     #5BFF7F;
+}
+
+/* ファイルボタン制御 */
+.File {
+  display:              inline-block;                           /* 隙間表示をなくす(幅・高さの調整可) */
+  overflow:             hidden;                                 /* はみでたら表示しない */
+  position:             relative;                               /* 相対位置 */
+  border:               1px;
+  background-color:     #B0E0E6;
+}
+
+.File input[type="file"] {
+  opacity:              0;                                      /* 透明状態にする */
+  filter:               progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  position:             absolute;                               /* 絶対値type=fileの箇所のみとする */
+  right:                0;
+  left:                 0;
+  top:                  0;
+  bottom:               0;
+  font-size:            100px;
+}
+
+.File:hover {
+  background-color:     #59b1eb;
+}
+
+
+/* 横に伸ばさないように制御 */
+fieldset {
+  display:              inline;
+}
+
+.Custom select {
+  background:           #B0E0E6;
+  width:                230px;
+  height:               20px;
+  padding:              0px;
+  font-size:            12px;
+  line-height:          1;
+  border:               5;
+  border-radius:        0;
+}
+
+.TableDesign {
+  width: 100%;
+  border-collapse:      collapse;                               /* 隣接するセルのボーダを重ねて表示 */
+}
+.TableDesign th {
+  width:                25%;
+  text-align:           center;
+  vertical-align:       top;
+  color:                #333;
+  background-color:     #eee;
+  border:               5px solid #b9b9b9;
+}
+.TableDesign td{
+  background-color:     #fff;
+  border:               3px solid #b9b9b9;
+  text-align:           center;
+}
+
+#PageMain {
+  width:                700px;
+  margin:               0 auto;
+}
+
+/* メインロゴ用 */
+.MainLogo {
+  float:                left;
+}
