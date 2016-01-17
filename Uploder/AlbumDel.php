@@ -24,9 +24,6 @@
     $DelPhoto = new DelPhoto();                                              // データ削除系クラス
     $Judge    = false;                                                       // 遷移先判定
 
-    // デバッグ(番号)
-    //var_dump($DelPhoto->getPhotoNum());
-
     // 削除系 ////////////////////////////////
     // DBデータ削除
     DeleteDB($DelPhoto->getSetDB(), $DelPhoto->getDelSql(), $DelPhoto->getPhotoNum());
